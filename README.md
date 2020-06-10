@@ -5,6 +5,8 @@ In this project we are handling following topics: Maven Build Life cycle, Implem
 
 **Contributors:**
 
-[Lukas Doppelhofer](https://github.com/LukasDoppelhofer/)(FH Campus02)
+[Lukas Doppelhofer](https://github.com/LukasDoppelhofer/) (FH Campus02)
+[Markus Kaufmann](https://github.com/markuskaufmann87/) (FH Campus02)
+[Mehrad Sadeghfam](https://github.com/Mehrad876/) (FH Campus02)
 
 **Project Queues:**
