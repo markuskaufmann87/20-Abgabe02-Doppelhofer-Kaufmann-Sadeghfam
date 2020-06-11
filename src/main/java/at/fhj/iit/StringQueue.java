@@ -8,13 +8,24 @@ import java.util.NoSuchElementException;
 // there are different Bugs, wrong implementation, typos, ...
 // write Test-Cases (read Queue Interface for understanding methods) and use Debugging possibilies of your IDE
 
+/**
+ * Class represents a queue of Strings
+ *
+ * @author Markus Kaufmann
+ * @version %I%, %G%
+ */
 public class StringQueue implements IQueue {
 
   private List<String> elements = new ArrayList<String>();
   private int maxSize = 5;
 
+  //added default constructor
+  public StringQueue(){
+    this.maxSize = maxSize;
+  }
+
   public StringQueue(int maxsize) {
-    maxSize = maxSize;
+    this.maxSize = maxSize;
   }
 
   @Override
@@ -38,10 +49,11 @@ public class StringQueue implements IQueue {
     return element;
   }
 
+  //removed assignment element="", because makes poll() useless!
   @Override
   public String remove() {
     String element = poll();
-    element = "";
+//    element = "";
     if (element == null)
       throw new NoSuchElementException("there's no element any more");
 
