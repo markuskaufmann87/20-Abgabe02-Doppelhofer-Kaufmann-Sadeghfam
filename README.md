@@ -1,4 +1,7 @@
+
+
 # Software Configuration Management
+
 ## Assignment: 02 Queue
 
 In this project we are handling following topics: Maven Build Life cycle, Implementation and Java Documentation, J-Unit Testing and Maven Site Documentation.
@@ -22,6 +25,8 @@ This project implements a Queue where the String objects where stored in an Arra
 - [ ] **bug search and fixing**
 
       inspection of StringQueue.java, no test needed because of obvious bugs
+
+- [x] testing StringQueue.java with 100% coverage
 
 - [ ] **new implemention** of Queue (Generics)
 
