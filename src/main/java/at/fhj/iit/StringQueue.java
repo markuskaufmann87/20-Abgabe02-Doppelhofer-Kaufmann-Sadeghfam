@@ -24,8 +24,9 @@ public class StringQueue implements IQueue {
         this.maxSize = maxSize;
     }
 
-    public StringQueue(int maxsize) {
+    public StringQueue(int maxSize) {
         this.maxSize = maxSize;
+
     }
 
     @Override
@@ -81,4 +82,11 @@ public class StringQueue implements IQueue {
         return element;
     }
 
+  public List<String> getElements() {
+    return elements;
+  }
+
+  public int getMaxSize() {
+    return maxSize;
+  }
 }
