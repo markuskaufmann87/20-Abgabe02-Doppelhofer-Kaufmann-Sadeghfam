@@ -22,7 +22,7 @@
       </roles>
       <timezone>Europe/Vienna</timezone>
       <properties>
-        <picUrl>https://avatars3.githubusercontent.com/u/62706286?s=400&u=07b10b063e3ae7254be3ee68901449b73f61a2cc&v=4</picUrl>
+        <picUrl>https://avatars3.githubusercontent.com/u/62706286</picUrl>
       </properties>
     </developer>
     <developer>
@@ -35,7 +35,7 @@
       </roles>
       <timezone>Europe/Vienna</timezone>
       <properties>
-        <picUrl>https://avatars1.githubusercontent.com/u/62705247?s=460&u=e0daa690d52603777979d79d6f1ba5e808803b44&v=4</picUrl>
+        <picUrl>https://avatars1.githubusercontent.com/u/62705247</picUrl>
       </properties>
     </developer>
 	<developer>
@@ -48,7 +48,7 @@
       </roles>
       <timezone>Europe/Vienna</timezone>
       <properties>
-        <picUrl>https://avatars1.githubusercontent.com/u/62705855?s=400&u=5165bf2d0ac06240e90dd5dbb8935a3ad99319ef&v=4</picUrl>
+        <picUrl>https://avatars1.githubusercontent.com/u/62705855</picUrl>
       </properties>
     </developer>
   </developers>
