@@ -22,13 +22,13 @@ This project implements a Queue where the String objects where stored in an Arra
 
 - [x] configuration of **pom.xml**
 
-- [ ] **bug search and fixing**
+- [x] **bug search and fixing**
 
       inspection of StringQueue.java, no test needed because of obvious bugs
 
 - [x] testing StringQueue.java with 100% coverage
 
-- [ ] **new implemention** of Queue (Generics)
+- [x] **new implemention** of Queue (Generics)
 
 - [ ] testing with 100% coverage 
 
