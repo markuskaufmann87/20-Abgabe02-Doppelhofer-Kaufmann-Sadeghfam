@@ -12,6 +12,7 @@ import java.util.NoSuchElementException;
  * Class represents a queue of Strings
  *
  * @author Markus Kaufmann
+ * @author Mehrad Sadeghfam
  * @version %I%, %G%
  */
 public class StringQueue implements IQueue {
