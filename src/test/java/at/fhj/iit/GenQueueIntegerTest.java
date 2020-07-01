@@ -1,5 +1,6 @@
 package at.fhj.iit;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -11,7 +12,6 @@ import static org.junit.jupiter.api.Assertions.*;
 public class GenQueueTest {
 
     GenQueue<Integer> queue;
-    GenQueue<Character> queue1;
 
     /**
      * inits the queue
@@ -21,8 +21,10 @@ public class GenQueueTest {
         queue = new GenQueue<>(2);
         queue.enqueue(3);
         queue.enqueue(10);
-        queue1 = new GenQueue<>();
     }
+
+    @AfterEach
+    void
 
     @Test
     @DisplayName("Testing constructor GenQueue")

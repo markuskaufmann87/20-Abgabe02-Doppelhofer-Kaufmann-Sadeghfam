@@ -82,6 +82,17 @@ public class GenQueue<T> {
     }
 
     /**
+     * returns the head element of the queue
+     * @return head element of queue
+     * @throws NoSuchElementException if queue is empty!
+     */
+    public T getHeadElement(){
+        if(elements.size() > 0){
+            return elements.get(0);
+        } else throw new NoSuchElementException("there's no element any more");
+    }
+
+    /**
      * returns the maximum size value that can be stored in this Queue.
      * @return  maxSize value of Elements that can be stored in this Queue.
      */
