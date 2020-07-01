@@ -9,7 +9,9 @@ In this project we are handling following topics: Maven Build Life cycle, Implem
 ### **Contributors:**
 
 [Lukas Doppelhofer](https://github.com/LukasDoppelhofer/) (FH Campus02)
+
 [Markus Kaufmann](https://github.com/markuskaufmann87/) (FH Campus02)
+
 [Mehrad Sadeghfam](https://github.com/Mehrad876/) (FH Campus02)
 
 ### **Project Queues:**
@@ -30,7 +32,7 @@ This project implements a Queue where the String objects where stored in an Arra
 
 - [x] **new implemention** of Queue (Generics)
 
-- [ ] testing with 100% coverage 
+- [X] testing with 100% coverage 
 
       including JavaDoc  comments
 
