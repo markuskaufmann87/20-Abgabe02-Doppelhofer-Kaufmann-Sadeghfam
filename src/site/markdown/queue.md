@@ -7,7 +7,7 @@
 > Kann auch als Priority Queue implementiert werden sodass sich die Reihenfolge nach der Priorität richtet. Entweder HIFO (highest first out) oder LOFO (lowest first out).
 
 #### Elementare Methoden
-> ![Queue](./resources/images/queue.png)
+> ![Queue](../resources/images/queue.png)
 >
 > _**enqueue**_
 > Zum Hinzufügen von Elementen an das Ende Der Warteschlage.
@@ -23,16 +23,18 @@
 > _**enqueue**_
 > ```java
 > if (elements.size() != maxSize) {
->    elements.add(object);
+> elements.add(object);
 > }
+> ```
 
 > _**dequeue**_
 > ```java
 > if (elements.size() > 0) {
->     object = elements.get(0);
->     elements.remove(0);
->     return object;
+>  object = elements.get(0);
+>  elements.remove(0);
+>  return object;
 > }
+> ```
 
 #### Links
 > [Queue Dokumentation](https://www.geeksforgeeks.org/queue-data-structure/)
