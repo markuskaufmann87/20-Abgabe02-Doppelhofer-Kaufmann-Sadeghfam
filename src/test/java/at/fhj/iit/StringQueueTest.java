@@ -41,7 +41,7 @@ class StringQueueTest {
 
     /**
      * testing the constructor of {@link StringQueue} with maxSize = 2
-     * @result equals 2 because maxSize is 2
+     * result: equals 2 because maxSize is 2
      */
     @Test
     @DisplayName("Testing constructor StringsQueue")
@@ -51,7 +51,7 @@ class StringQueueTest {
 
     /**
      * testing the default constructor of {@link StringQueue}
-     * @result default value of maxSize should be 5
+     * result: default value of maxSize should be 5
      */
     @Test
     @DisplayName("Testing default constructor StringsQueue")
@@ -62,7 +62,7 @@ class StringQueueTest {
     /**
      * testing {@link StringQueue#offer(String)} method
      * checks if return boolean is false if maxSize of queue is reached
-     * @result is false because maxSize is reached
+     * result: is false because maxSize is reached
      */
     @Test
     @DisplayName("Testing offer method")
@@ -77,8 +77,8 @@ class StringQueueTest {
     /**
      * testing {@link StringQueue#peek()} method
      * checks if method return the head element of queue
-     * @result {@link StringQueueTest#queue} "Text" expected because head element is "Text"
-     * @result {@link StringQueueTest#queue1} "Null" expected because head element is "Null"
+     * result: {@link StringQueueTest#queue} "Text" expected because head element is "Text"
+     * result: {@link StringQueueTest#queue1} "Null" expected because head element is "Null"
      */
     @Test
     @DisplayName("Testing peek method")
@@ -93,8 +93,8 @@ class StringQueueTest {
      * testing {@link StringQueue#element()} method
      * checks if method throws exception if the queue is empty
      * checks if method returns head element
-     * @result {@link NoSuchElementException} thrown because {@link StringQueueTest#queue1} is empty
-     * @result {@link StringQueueTest#queue} "Text" expected because head element is "Text"
+     * result: {@link NoSuchElementException} thrown because {@link StringQueueTest#queue1} is empty
+     * result: {@link StringQueueTest#queue} "Text" expected because head element is "Text"
      */
     @Test
     @DisplayName("Testing element method")
@@ -110,9 +110,9 @@ class StringQueueTest {
      * testing {@link StringQueue#poll()} and {@link StringQueue#remove()} method
      * checks if method throws exception if the queue is empty
      * checks if method return the head element and remove it
-     * @result {@link NoSuchElementException} thrown because {@link StringQueueTest#queue1} is empty
-     * @result {@link StringQueueTest#queue} "Text" expected because head element is "Text"
-     * @result {@link StringQueueTest#queue} "1" expected because queueSize should be 1 after removing 1 of 2 elements
+     * result: {@link NoSuchElementException} thrown because {@link StringQueueTest#queue1} is empty
+     * result: {@link StringQueueTest#queue} "Text" expected because head element is "Text"
+     * result: {@link StringQueueTest#queue} "1" expected because queueSize should be 1 after removing 1 of 2 elements
      */
     @Test
     @DisplayName("Testing remove method")
