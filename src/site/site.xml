@@ -1,25 +1,36 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <project name="Queue">
-<bannerLeft>
-    <name>Maven</name>
-    <src>http://maven.apache.org/images/apache-maven-project.png</src>
-    <href>http://maven.apache.org/</href>
-</bannerLeft>
-<bannerRight>
-    <src>http://maven.apache.org/images/maven-small.gif</src>
-</bannerRight>
-<body>
-    <links>
-        <item name="Apache" href="http://www.apache.org/" />
-        <item name="Maven 1.x" href="http://maven.apache.org/maven-1.x/"/>
-        <item name="Maven 2" href="http://maven.apache.org/"/>
-    </links>
+    <bannerLeft>
+        <name>Maven</name>
+        <src>http://maven.apache.org/images/apache-maven-project.png</src>
+        <href>http://maven.apache.org/</href>
+    </bannerLeft>
+    <bannerRight>
+        <src>http://maven.apache.org/images/maven-small.gif</src>
+    </bannerRight>
+    <body>
+        <links>
+            <item name="Apache" href="http://www.apache.org/"/>
+            <item name="Maven 1.x" href="http://maven.apache.org/maven-1.x/"/>
+            <item name="Maven 2" href="http://maven.apache.org/"/>
+        </links>
 
-    <menu name="20-Abgabe02-Doppelhofer-Kaufmann-Sadeghfam">
-        <item name="Queue" href="queue.html" />
-    </menu>
+        <menu name="Queue - Project Information">
+            <item name="project overview" href="project-info.html"/>
+            <item name="queue definition" href="queue.html"/>
+            <item name="dependencies" href="dependencies.html">
+                <item name="Dependency Infos" href="dependency-info.html"/>
+            </item>
+            <item name="plugins" href="plugins.html">
+                <item name="plugin management" href="plugin-management.html"/>
+            </item>
+            <item name="summary" href="summary.html"/>
+            <item name="team" href="team.html"/>
+        </menu>
+        <menu name="Reports">
+            <item name="JavaDoc" href="apidocs/index.html"/>
+            <item name="JavaDoc Tests" href="testapidocs/index.html"/>
+        </menu>
 
-    <menu ref="reports"/>
-
-</body>
+    </body>
 </project>
