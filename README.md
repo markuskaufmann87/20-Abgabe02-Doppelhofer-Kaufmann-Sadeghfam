@@ -16,7 +16,10 @@ In this project we are handling following topics: Maven Build Life cycle, Implem
 
 ### **Project Queues:**
 
-This project implements a Queue where the String objects where stored in an Array. StringQueue.java implements the interface IQueue.java. Now we expand our project with a new implementation of a queue where different data types can be stored (realized with java Generics).
+This project implements a Queue where the String objects where stored in an Array.
+StringQueue.java implements the interface IQueue.java.
+
+Now we expand our project with a new implementation of a queue where different data types can be stored (realized with Java Generics).
 
 ### Tasks:
 
@@ -24,19 +27,15 @@ This project implements a Queue where the String objects where stored in an Arra
 
 - [x] configuration of **pom.xml**
 
-- [x] **bug search and fixing**
+- [x] **bug search and fixing** <br>inspection of StringQueue.java, no test needed because of obvious bugs
 
-      inspection of StringQueue.java, no test needed because of obvious bugs
-
-- [x] testing StringQueue.java with 100% coverage
+- [x] testing StringQueue.java <br>with 100% coverage
 
 - [x] **new implemention** of Queue (Generics)
 
-- [X] testing with 100% coverage 
+- [x] testing with 100% coverage <br>including JavaDoc comments
 
-      including JavaDoc  comments
+- [x] Maven Site documentation
 
-- [ ] Maven Site documentation
-
-- [ ] finishing labreport (ongoing)
+- [x] finishing labreport (ongoing)
 
