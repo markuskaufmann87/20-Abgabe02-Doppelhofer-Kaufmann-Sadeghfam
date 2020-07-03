@@ -6,9 +6,10 @@ import java.util.NoSuchElementException;
 
 /**
  * Class represents a Queue with Elements of a Generic data type.
- * @author  Markus Kaufmann
+ *
+ * @param <T> Describes Generic Type Parameter
+ * @author Markus Kaufmann
  * @version %I%, %G%
- * @param   <T> Describes Generic Type Parameter
  */
 public class GenQueue<T> {
 
@@ -26,6 +27,7 @@ public class GenQueue<T> {
      * Default Constructor of GenQueue.
      * Setting maxSize to default value of 5.
      * Can be changed via setter setMaxSize:
+     *
      * @see #setMaxSize(int)
      */
     public GenQueue() {
@@ -34,6 +36,7 @@ public class GenQueue<T> {
 
     /**
      * Constructor with parameter who sets maxSize value.
+     *
      * @param maxSize Maximum Size of Elements which can be stored in this Queue!
      * @see #maxSize
      */
@@ -43,10 +46,11 @@ public class GenQueue<T> {
 
     /**
      * Adds the element t to the queue.
+     *
      * @param t object of this data type
      * @throws MaxSizeException if the maximum size of Queue is reached!
      */
-    public void enqueue(T t) throws MaxSizeException {
+    public void enqueue(T t) {
         if (elements.size() != maxSize) {
             elements.add(t);
         } else throw new MaxSizeException();
@@ -55,7 +59,8 @@ public class GenQueue<T> {
 
     /**
      * returns the first element of the Queue and deletes it.
-     * @return  object of generic data type, first element of Queue.
+     *
+     * @return object of generic data type, first element of Queue.
      */
     public T dequeue() {
         if (elements.size() > 0) {
@@ -67,14 +72,16 @@ public class GenQueue<T> {
 
     /**
      * returns the amount of the actual size of the Queue.
-     * @return  Amount of actual Queue size.
+     *
+     * @return Amount of actual Queue size.
      */
-    public int getQueueSize(){
+    public int getQueueSize() {
         return elements.size();
     }
 
     /**
      * returns the List of Queue Elements stored in this Queue
+     *
      * @return List of Queue Elements of this data type.
      */
     public List<T> getElements() {
@@ -83,18 +90,20 @@ public class GenQueue<T> {
 
     /**
      * returns the head element of the queue
+     *
      * @return head element of queue
      * @throws NoSuchElementException if queue is empty!
      */
-    public T getHeadElement(){
-        if(elements.size() > 0){
+    public T getHeadElement() {
+        if (elements.size() > 0) {
             return elements.get(0);
         } else throw new NoSuchElementException("there's no element any more");
     }
 
     /**
      * returns the maximum size value that can be stored in this Queue.
-     * @return  maxSize value of Elements that can be stored in this Queue.
+     *
+     * @return maxSize value of Elements that can be stored in this Queue.
      */
     public int getMaxSize() {
         return maxSize;
@@ -102,9 +111,10 @@ public class GenQueue<T> {
 
     /**
      * updates the maximum Size of Elements that can be stored in this Queue
+     *
      * @param maxSize Nr of elements that can be stored in this Queue.
      */
-    public void setMaxSize(int maxSize){
+    public void setMaxSize(int maxSize) {
         this.maxSize = maxSize;
     }
 
