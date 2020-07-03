@@ -2,145 +2,135 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>at.fhj.iit</groupId>
-  <artifactId>Queue</artifactId>
-  <version>1.0-SNAPSHOT</version>
+    <groupId>at.fhj.iit</groupId>
+    <artifactId>Queue</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
-  <name>Queue</name>
-  <url>https://github.com/markuskaufmann87/20-Abgabe02-Doppelhofer-Kaufmann-Sadeghfam.git</url>
+    <name>Queue</name>
+    <description>Implementation of a generic Queue, working with different data types</description>
+    <url>https://github.com/markuskaufmann87/20-Abgabe02-Doppelhofer-Kaufmann-Sadeghfam.git</url>
 
-  <developers>
-    <developer>
-      <id>Mehrad876</id>
-      <name>Mehrad Sadeghfam</name>
-      <email>mehrad.sadeghfam@edu.campus02.at</email>
-      <organization>FH Campus 02</organization>
-      <roles>
-        <role>Student</role>
-      </roles>
-      <timezone>Europe/Vienna</timezone>
-      <properties>
-        <picUrl>https://avatars3.githubusercontent.com/u/62706286</picUrl>
-      </properties>
-    </developer>
-    <developer>
-      <id>markuskaufmann87</id>
-      <name>Markus Kaufmann</name>
-      <email>markus.kaufmann@edu.campus02.at</email>
-      <organization>FH Campus 02</organization>
-      <roles>
-        <role>Student</role>
-      </roles>
-      <timezone>Europe/Vienna</timezone>
-      <properties>
-        <picUrl>https://avatars1.githubusercontent.com/u/62705247</picUrl>
-      </properties>
-    </developer>
-	<developer>
-      <id>LukasDoppelhofer</id>
-      <name>Lukas Doppelhofer</name>
-      <email>lukas.doppelhofer@edu.campus02.at</email>
-      <organization>FH Campus 02</organization>
-      <roles>
-        <role>Student</role>
-      </roles>
-      <timezone>Europe/Vienna</timezone>
-      <properties>
-        <picUrl>https://avatars1.githubusercontent.com/u/62705855</picUrl>
-      </properties>
-    </developer>
-  </developers>
+    <developers>
+        <developer>
+            <id>Mehrad876</id>
+            <name>Mehrad Sadeghfam</name>
+            <email>mehrad.sadeghfam@edu.campus02.at</email>
+            <organization>FH Campus 02</organization>
+            <roles>
+                <role>Student</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
+            <properties>
+                <picUrl>https://avatars3.githubusercontent.com/u/62706286</picUrl>
+            </properties>
+        </developer>
+        <developer>
+            <id>markuskaufmann87</id>
+            <name>Markus Kaufmann</name>
+            <email>markus.kaufmann@edu.campus02.at</email>
+            <organization>FH Campus 02</organization>
+            <roles>
+                <role>Student</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
+            <properties>
+                <picUrl>https://avatars1.githubusercontent.com/u/62705247</picUrl>
+            </properties>
+        </developer>
+        <developer>
+            <id>LukasDoppelhofer</id>
+            <name>Lukas Doppelhofer</name>
+            <email>lukas.doppelhofer@edu.campus02.at</email>
+            <organization>FH Campus 02</organization>
+            <roles>
+                <role>Student</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
+            <properties>
+                <picUrl>https://avatars1.githubusercontent.com/u/62705855</picUrl>
+            </properties>
+        </developer>
+    </developers>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.comiler.release>11</maven.comiler.release>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.comiler.release>11</maven.comiler.release>
+    </properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-api</artifactId>
-      <version>5.6.2</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.6.2</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-params</artifactId>
-      <version>5.6.2</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.6.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.6.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>5.6.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
-  <reporting>
-    <plugins>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+            <!-- java doc support for maven site -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <show>public</show>
+                    <tags>
+                        <tag>
+                            <name>result</name>
+                            <placement>a</placement>
+                            <head>Test assertion:</head>
+                        </tag>
+                    </tags>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
 
-      <!-- maven site for documentation -->
-      <!-- manual upgraded maven site plugin, because 3.3 had an error -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-site-plugin</artifactId>
-        <version>3.7.1</version>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.0.0</version>
-      </plugin>
-      <!-- java doc support for maven site -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.2.0</version>
-        <reportSets>
-          <!-- reports our javadocs in our src code and test code -->
-          <reportSet>
-            <reports>
-              <report>javadoc</report>
-              <report>test-javadoc</report>
-            </reports>
-          </reportSet>
-          <reportSet><!-- aggregate reportSet, to define in poms having modules -->
-            <id>aggregate</id>
-            <inherited>false</inherited><!-- don't run aggregate in child modules -->
-            <reports>
-              <report>aggregate</report>
-            </reports>
-          </reportSet>
-        </reportSets>
-      </plugin>
-    </plugins>
-  </reporting>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.0</version>
-        <configuration>
-          <release>11</release>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.22.1</version>
-      </plugin>
-
-      <!-- Maven Site Plugin for generating documentation -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-site-plugin</artifactId>
-        <version>3.7.1</version>
-      </plugin>
-    </plugins>
-  </build>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <release>11</release>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
