@@ -16,8 +16,7 @@ import java.util.NoSuchElementException;
  * @author Lukas Doppelhofer
  * @version %I%, %G%
  */
-@DisplayName("Testing String Queue implementation")
-class StringQueueTest {
+public class StringQueueTest {
 
     private StringQueue queue;
     private StringQueue queue1;
